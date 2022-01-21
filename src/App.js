@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {Routes, Route} from "react-router-dom";
+import {
+  Home,
+  AddMovieForm
+} from "./pages";
+import { useState, useEffect } from "react";
 
 function App() {
+
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetch('./movies.json')
+      .then((response) => response.json())
+      .then(setMovies)
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home movies={movies} setMovies={setMovies}/>}/>
+        <Route path="/AddMovie" element={<AddMovieForm movies={movies} setMovies={setMovies}/>}/>
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "Back to the Future",
+        "date" : "1985",
+        "actors" : ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
+        "poster" : "backToTheFuture.jpg",
+        "rating" : 5
+    },
+    {
+        "name" : "The Lord of the Rings: The Fellowship of the Ring",
+        "date" : "2001",
+        "actors" : ["Elijah Wood", "Ian McKellen", "Sean Astin"],
+        "poster" : "lotr.jpg",
+        "rating" : 5
+    },
+    {
+        "name" : "When Harry Met Sally…",
+        "date" : "1989",
+        "actors" : ["Billy Crystal", "Meg Ryan", "Carrie Fisher"],
+        "poster" : "whenHarryMetSally.jpg",
+        "rating" : 5
+    },
+    {
+        "name" : "Airplane!",
+        "date" : "1980",
+        "actors" : ["Elijah Wood", "Ian McKellen", "Sean Astin"],
+        "poster" : "airplane.jpg",
+        "rating" : 5
+    }
+]
