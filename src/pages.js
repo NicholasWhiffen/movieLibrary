@@ -82,7 +82,7 @@ export function AddMovieForm({movies, setMovies}) {
       <Header></Header>
       <form onSubmit={submit}>
         <div>
-        <label>Rating: 
+        <label>Poster: 
             <select ref={formPoster} required>
               <option value="backToTheFuture.jpg">Back to the Future</option>
               <option value="lotr.jpg">Lord of the Rings</option>
