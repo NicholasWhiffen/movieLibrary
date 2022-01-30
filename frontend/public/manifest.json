@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Movie Library",
+  "name": "Movie Library - CP3540 Assignment 2",
   
   "start_url": ".",
   "display": "standalone",
